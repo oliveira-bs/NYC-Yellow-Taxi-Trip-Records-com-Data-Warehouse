@@ -1,0 +1,52 @@
+{
+    "time_dim": {
+        "time_id": "int",
+        "date": "datetime64[us]",
+        "year": "int",
+        "month": "int",
+        "day": "int",
+        "day_of_week": "str",
+        "hour": "int",
+        "minute": "int",
+        "second": "int",
+        "part_of_day": "str"
+    },
+    "vendor_dim": {
+        "vendor_id": "int",
+        "vendor_name": "str"
+    },
+    "location_dim": {
+        "location_id": "int",
+        "borough": "str",
+        "zone": "str",
+        "service_zone": "str"
+    },
+    "rate_code_dim": {
+        "rate_code_id": "int",
+        "rate_code_description": "str"
+    },
+    "payment_type_dim": {
+        "payment_type_id": "int",
+        "payment_description": "str"
+    },
+    "trips_fact": {
+        "trip_id": "int",
+        "vendor_id": "int",
+        "pickup_time_id": "int",
+        "dropoff_time_id": "int",
+        "pickup_location_id": "int",
+        "dropoff_location_id": "int",
+        "rate_code_id": "int",
+        "passenger_count": "int",
+        "trip_distance": "float",
+        "payment_type_id": "int",
+        "fare_amount": "float",
+        "extra": "float",
+        "mta_tax": "float",
+        "tip_amount": "float",
+        "tolls_amount": "float",
+        "total_amount": "float",
+        "calc_trip_duration_seconds": "int",
+        "load_datetime": "datetime64[us]"
+    }
+}
